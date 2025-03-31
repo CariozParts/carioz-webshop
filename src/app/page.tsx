@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div>
@@ -11,9 +13,9 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8">
               Find the perfect parts for your car with our extensive collection
             </p>
-            <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors">
+            <Link href="/shop" className="inline-block bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors">
               Shop Now
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -28,7 +30,7 @@ export default function Home() {
               <div className="text-4xl mb-4">🔧</div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Engine Parts</h3>
               <p className="text-gray-700 mb-4 flex-grow">High-quality engine components for optimal performance</p>
-              <a href="#" className="text-orange-600 hover:text-orange-800">Browse Engine Parts →</a>
+              <Link href="/categories/engine" className="text-orange-600 hover:text-orange-800">Browse Engine Parts →</Link>
             </div>
 
             {/* Brake System */}
@@ -36,7 +38,7 @@ export default function Home() {
               <div className="text-4xl mb-4">🛑</div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Brake System</h3>
               <p className="text-gray-700 mb-4 flex-grow">Premium brake pads, rotors, and brake accessories</p>
-              <a href="#" className="text-orange-600 hover:text-orange-800">Browse Brake Parts →</a>
+              <Link href="/categories/brakes" className="text-orange-600 hover:text-orange-800">Browse Brake Parts →</Link>
             </div>
 
             {/* Suspension */}
@@ -44,7 +46,7 @@ export default function Home() {
               <div className="text-4xl mb-4">🔩</div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Suspension</h3>
               <p className="text-gray-700 mb-4 flex-grow">Shocks, struts, and suspension components</p>
-              <a href="#" className="text-orange-600 hover:text-orange-800">Browse Suspension →</a>
+              <Link href="/categories/suspension" className="text-orange-600 hover:text-orange-800">Browse Suspension →</Link>
             </div>
           </div>
         </div>

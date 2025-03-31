@@ -1,5 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,13 +24,23 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex items-center">
-                <h1 className="text-2xl font-bold text-orange-600">Carioz</h1>
+                <Link href="/" className="text-2xl font-bold text-orange-600">
+                  Carioz
+                </Link>
               </div>
               <div className="flex items-center space-x-4">
-                <a href="#" className="text-gray-700 hover:text-orange-600">Shop</a>
-                <a href="#" className="text-gray-700 hover:text-orange-600">Categories</a>
-                <a href="#" className="text-gray-700 hover:text-orange-600">About</a>
-                <a href="#" className="text-gray-700 hover:text-orange-600">Contact</a>
+                <Link href="/shop" className="text-gray-700 hover:text-orange-600">
+                  Shop
+                </Link>
+                <Link href="/categories" className="text-gray-700 hover:text-orange-600">
+                  Categories
+                </Link>
+                <Link href="/about" className="text-gray-700 hover:text-orange-600">
+                  About
+                </Link>
+                <Link href="/contact" className="text-gray-700 hover:text-orange-600">
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
@@ -50,10 +62,26 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900">Quick Links</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-700 hover:text-orange-600">Shop</a></li>
-                  <li><a href="#" className="text-gray-700 hover:text-orange-600">Categories</a></li>
-                  <li><a href="#" className="text-gray-700 hover:text-orange-600">About Us</a></li>
-                  <li><a href="#" className="text-gray-700 hover:text-orange-600">Contact</a></li>
+                  <li>
+                    <Link href="/shop" className="text-gray-700 hover:text-orange-600">
+                      Shop
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/categories" className="text-gray-700 hover:text-orange-600">
+                      Categories
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="text-gray-700 hover:text-orange-600">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-gray-700 hover:text-orange-600">
+                      Contact
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div>
