@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Carioz - Premium Car Parts",
   description: "Your one-stop shop for high-quality car parts and accessories",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
@@ -47,7 +48,7 @@ export default function RootLayout({
         </nav>
 
         {/* Main Content */}
-        <main>
+        <main className="min-h-screen">
           {children}
         </main>
 
